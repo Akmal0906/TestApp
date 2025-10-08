@@ -5,10 +5,11 @@ class NewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Container(
-        color: Colors.yellow,
-        child: Container(),
+      body: Column(
+        children: [
+          Text('new 1'),
+           Text('new 1'),
+        ],
       ),
     );
   }
