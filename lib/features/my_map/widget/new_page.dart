@@ -8,6 +8,7 @@ class NewPage extends StatelessWidget {
       body: Column(
         children: [
           Text('new 1'),
+           Text('new 2'),
         ],
       ),
     );
