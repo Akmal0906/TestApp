@@ -10,6 +10,10 @@ class MyMapPage extends BasePage<MyMapCubit, MyMapBuildable, MyMapListenable> {
   @override
   Widget builder(BuildContext context, MyMapBuildable state) {
     return Scaffold(
+      appBar: AppBar(
+          title: Text('uz'),
+          centerTitle: true
+      ),
       body: RepaintBoundary(
         child: GoogleMap(
           initialCameraPosition: CameraPosition(
@@ -20,12 +24,14 @@ class MyMapPage extends BasePage<MyMapCubit, MyMapBuildable, MyMapListenable> {
           myLocationButtonEnabled: true,
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.location_on_outlined,color: Colors.red,),),
+      floatingActionButton: InkWell(
+        onTap: (){},
+        child: Container(
+          child: Text('hi'),
+        ),
+      ),
     );
   }
 }
 
-// storePassword=Akmal123456
-// keyPassword=Akmal123456
-// keyAlias=upload
-// storeFile=../app/upload-keystore.jks
+
