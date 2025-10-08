@@ -33,33 +33,7 @@ class SplashPage extends StatelessWidget {
         builder: (BuildContext context, double value, Widget? child) {
           return Opacity(
             opacity: value,
-            child: Container(
-              alignment: Alignment.center,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const Spacer(),
-                  Assets.icons.mainLogo.svg(
-                    height: 57,
-                    width: 200,
-                    color: context.colors.primary,
-                  ),
-                  const Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      "Powered By".s(14).w(500),
-                      const SizedBox(width: 12),
-                      Assets.icons.subLogo.svg(),
-                    ],
-                  ),
-                  const SizedBox(height: 50),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
+           
     );
   }
 }
