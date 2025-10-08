@@ -73,10 +73,6 @@ class HomePage extends BasePage<HomeCubit, HomeBuildable, HomeListenable> {
                     ),
                   ),
 
-                  'Gym name:'
-                      .s(14)
-                      .w(700)
-                      .c(Color.fromRGBO(0, 0, 0, 1)),
 
                   Container(
                     height: 52,
