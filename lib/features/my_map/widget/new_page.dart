@@ -7,8 +7,7 @@ class NewPage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('new 1'),
-           Text('new 1'),
+        
         ],
       ),
     );
